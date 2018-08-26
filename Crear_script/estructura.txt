@@ -1,0 +1,5 @@
+#!/bin/bash
+#NUEVO SCRIPT
+#Creador: 
+#Fecha: 
+#Descripción: 
