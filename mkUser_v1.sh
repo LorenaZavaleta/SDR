@@ -194,7 +194,7 @@ while [ true ]; do
 			makeUser
 		;;
 		2) 
-			echo -p "¿Qué usuario quieres editar su contraseña?: " user
+			read -p "¿Qué usuario quieres editar su contraseña?: " user
 			contraseñaVer
 		;;
 		0)
