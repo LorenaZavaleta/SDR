@@ -125,7 +125,7 @@ function contraseñaVer {
 	echo -e "\t\t>Mayúsculas"
 	echo -e "\t\t>Minúsculas"
 	echo -e "\t\t>Numeros"
-	echo -e "\t\t>Caracteres especiales (+ @ # $ ¿ ?)(Extrictamente uno de estos)"
+	echo -e "\t\t>Caracteres especiales (+ @ # $ ¿ ? % & / ( ) _ -)(Extrictamente uno de estos)"
 	while true; do
 		#Se lee el password
 		echo -n "Password:" 
@@ -136,7 +136,7 @@ function contraseñaVer {
 		numPass=$[ $numPass - 1 ]
 		
 		#Validación de logitud de password
-		if [ $numPass -ge 6 ] && [ $numChars -le 10 ];	then
+		if [ $numPass -ge 8 ] && [ $numChars -le 20 ];	then
 			#Validación de mayúsculas
 			passValido=`echo $password|grep '[A-Z]'`
 			#Validación de minúsculas
