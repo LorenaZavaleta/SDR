@@ -136,7 +136,7 @@ function contraseñaVer {
 		numPass=$[ $numPass - 1 ]
 		
 		#Validación de logitud de password
-		if [ $numPass -ge 8 ] && [ $numChars -le 20 ];	then
+		if [ $numPass -ge 8 ] && [ $numPass -le 20 ];	then
 			#Validación de mayúsculas
 			passValido=`echo $password|grep '[A-Z]'`
 			#Validación de minúsculas
